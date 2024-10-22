@@ -1,0 +1,56 @@
+/* Thinner 2008-style navbar aligned to the left */
+body {
+    font-family: Arial, sans-serif;
+  
+  }
+  
+  .navbar {
+    width: 100%;
+    background: linear-gradient(to bottom, #0099cc, #006699); /* Glossy gradient */
+    border: 1px solid #004466;
+    padding: 10px 0; /* Changed vertical padding to 10px */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: relative; /* Ensure the navbar is positioned independently */
+    z-index: 10; /* Bring it above other content */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Align to the left */
+    padding-left: 10px; /* Add padding to push away from the edge */
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 10px; /* Less margin between items */
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px; /* Adjusted padding to 10px vertically and 15px horizontally */
+    background-color: #0088cc;
+    border: 1px solid #006699;
+    border-radius: 3px; /* Smaller rounded corners */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); /* Slightly smaller text shadow */
+    font-size: 12px; /* Smaller font */
+    transition: background 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #006699;
+    color: #e6f2ff;
+  }
+  
+  .navbar ul li a:active {
+    background-color: #004466;
+  }
+  
+  /* Additional styling to prevent navbar from stretching */
+  img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
